@@ -22,7 +22,7 @@ float pmayor(int fila, int columna, int notasprogreso[][columna])
         }
     }
 
-    printf("El estudiante con el promedio mas alto es el numero %d\n", estudianteMayor);
+    printf("El estudiante con el promedio mas alto es el estudiante  %d\n", estudianteMayor);
 
     return notaMayor;
 }
