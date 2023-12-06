@@ -2,7 +2,8 @@
 #include <stdlib.h>
 #include <time.h>
 
-float pmayor(int fila, int columna, int notasprogreso[][columna]){
+float pmayor(int fila, int columna, int notasprogreso[][columna])
+{
     float notaMayor = 0.0;
     int estudianteMayor = 0; // generamos una variable para el estudiante mayor
 
@@ -17,11 +18,11 @@ float pmayor(int fila, int columna, int notasprogreso[][columna]){
         if (promedio > notaMayor)
         {
             notaMayor = promedio;
-            estudianteMayor = i + 1; // actualiza el numero del estudiante con el promedio  mas alto 
+            estudianteMayor = i + 1; // actualiza el numero del estudiante con el promedio  mas alto
         }
     }
 
-    printf("El estudiante con el promedio más alto es el numero %d\n", estudianteMayor); 
+    printf("El estudiante con el promedio mas alto es el numero %d\n", estudianteMayor);
 
     return notaMayor;
 }
@@ -67,8 +68,7 @@ int main(int argc, char const *argv[])
         printf("\n");
         printf("\n");
     }
-
-    
+    pmayor(fila, columna, notasprogreso); // llamamos a la funcion -qmayor- para que imprima el estudiante con el promedio mas alto
 
     return 0;
 }
